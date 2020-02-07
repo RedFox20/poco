@@ -144,3 +144,6 @@ cmake-build/
 *.bak
 stage/
 releases/
+
+mama.cmake
+

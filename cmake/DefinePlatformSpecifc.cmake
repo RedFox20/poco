@@ -36,7 +36,7 @@ if(MSVC)
             string(REPLACE "/MD" "/MT" ${CompilerFlag} "${${CompilerFlag}}")
         endforeach()
 
-        set(STATIC_POSTFIX "mt" CACHE STRING "Set static library postfix" FORCE)
+        set(STATIC_POSTFIX "" CACHE STRING "Set static library postfix" FORCE)
     else(POCO_MT)
         set(STATIC_POSTFIX "md" CACHE STRING "Set static library postfix" FORCE)
     endif(POCO_MT)

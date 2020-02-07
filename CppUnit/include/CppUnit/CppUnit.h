@@ -47,21 +47,21 @@
 #if defined(_MSC_VER)
 	#if defined(POCO_DLL)
 		#if defined(_DEBUG)
-			#define POCO_LIB_SUFFIX "d.lib"
+			#define POCO_LIB_SUFFIX ".lib"
 		#else
 			#define POCO_LIB_SUFFIX ".lib"
 		#endif
 	#elif defined(_DLL)
 		#if defined(_DEBUG)
-			#define POCO_LIB_SUFFIX "mdd.lib"
+			#define POCO_LIB_SUFFIX ".lib"
 		#else
-			#define POCO_LIB_SUFFIX "md.lib"
+			#define POCO_LIB_SUFFIX ".lib"
 		#endif
 	#else
 		#if defined(_DEBUG)
-			#define POCO_LIB_SUFFIX "mtd.lib"
+			#define POCO_LIB_SUFFIX ".lib"
 		#else
-			#define POCO_LIB_SUFFIX "mt.lib"
+			#define POCO_LIB_SUFFIX ".lib"
 		#endif
 	#endif
 #endif
