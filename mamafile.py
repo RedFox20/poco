@@ -18,4 +18,6 @@ class poco(mama.BuildTarget):
 
     def package(self):
         self.export_include('include', build_dir=True)
-        self.export_libs('lib', ['.lib','.a'])
+        self.export_libs('lib', ['.lib','.a'], order=[
+            'PocoUtil', 'PocoNet', 'PocoJSON', 'PocoXML', 'PocoEncodings', 'PocoFoundation'
+        ])
