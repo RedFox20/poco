@@ -54,7 +54,7 @@
 
 
 #if !defined(Foundation_API)
-	#if !defined(POCO_NO_GCC_API_ATTRIBUTE) && (__GNUC__ || __clang__)
+	#if !_MSC_VER
 		#define Foundation_API __attribute__ ((visibility ("default")))
 	#else
 		#define Foundation_API
